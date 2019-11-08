@@ -1,0 +1,20 @@
+.clearHeader{
+height: 200px; 
+background-color: rgba(107,107,107,0.66);
+position: fixed;
+top:200;
+width: 100%;
+transition:ease all 1s;
+-webkit-transition:ease all 1s;
+-moz-transition:ease all 1s;
+-o-transition:ease all 1s;
+}
+
+.darkHeader {
+  background-color:#333;
+  height: 100px;
+}
+
+.wrapper {
+height:2000px;
+}

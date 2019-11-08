@@ -1,0 +1,52 @@
+// Colors
+$navbar-white: #fafafa;
+$navbar-black: #131313;
+$navbar-active-color: #fafafa;
+$navbar-bg-active-color: #ff9900;
+$bg-light-blue: #00c6ff;
+$bg-dark-blue: #0072ff;
+
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100vh;
+}
+.jumbo {
+  padding-top: 150px;
+  height: 200vh;
+}
+// Navigation Bar
+.navbar {
+  a {
+    color: $navbar-black;
+  }
+  li {
+    &.active {
+      background: $navbar-bg-active-color;
+      a {
+        color: $navbar-active-color;
+      }
+    }
+  }
+  .navbar-toggle {
+    .icon-bar {
+      background: $navbar-black;
+    }
+  }
+}
+
+// On Shrink
+.shrink {
+  .navbar {
+    color: $navbar-white;
+    background: $bg-light-blue;
+    background: -webkit-linear-gradient(55deg,$bg-light-blue 10%,$bg-dark-blue 90%);
+    background: linear-gradient(35deg,$bg-light-blue 10%,$bg-dark-blue 90%);
+  }
+  .navbar-toggle {
+    .icon-bar {
+      background: $navbar-white;
+    }
+  }
+}
